@@ -1,0 +1,19 @@
+#sidebar {
+    width: 10%;
+    height: 100vh;
+
+    background-color: #202225!important;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+@media (max-width: 992px) {
+    #sidebar {
+        display: none;
+        /* Esconde a sidebar em telas pequenas */
+
+        background-color: #292b2f!important;
+    }
+}
