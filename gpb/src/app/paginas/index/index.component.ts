@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from "../../componentes/sidebar/sidebar.component";
+import { TableListComponent } from "../../componentes/table-list/table-list.component";
 
 @Component({
   selector: 'app-index',
-  imports: [SidebarComponent],
+  imports: [TableListComponent],
   templateUrl: './index.component.html',
   styleUrl: './index.component.css'
 })

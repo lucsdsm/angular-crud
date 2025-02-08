@@ -1,0 +1,38 @@
+* {
+    transition: 0.5s;
+}
+
+.navbar {
+    background-color: black !important;
+    color: #ffffff;
+
+    box-shadow: 0 0 10px black;
+}
+
+.navbar a {
+    font-family: pricedown;
+    font-size: 32px;
+    padding: 1rem;
+
+    color:  white !important;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: black; /* cor da borda */
+}
+
+.navbar a:hover {
+    color:  black !important;
+    -webkit-text-stroke-color: white; /* cor da borda */
+}
+
+/* img.navbar-brand {
+    border: 1px solid white !important;
+    border-radius: 360px; 
+} */
+
+/* .navbar i{
+    color: white;
+} */
+
+.navbar i:hover {
+    color: #7289da;
+}

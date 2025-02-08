@@ -1,0 +1,93 @@
+<div class="d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 105px); opacity: 0.9;">
+    <div class="w-75 w-md-75" style="max-height: 80vh;">
+        <p-table 
+        #dt2
+        [value]="viaturas"
+
+        [paginator]="true"
+        [rows]="6"
+
+        [globalFilterFields]="['marca', 'modelo', 'ano', 'corporacao', 'estado']"
+
+        sortField="modelo"
+        
+        [tableStyle]="{ 'min-width': '100%' }" 
+        class="table-responsive"
+        [resizableColumns]="true"
+        columnResizeMode="expand">
+        
+            <ng-template #header>
+                <tr>
+                    <th pSortableColumn="marca" style="text-align: center; border-top-left-radius: 25px;"> Marca <p-sortIcon field="marca" /> </th>
+                    <th pSortableColumn="modelo" style="text-align: center;"> Modelo <p-sortIcon field="modelo" />
+                    <th pSortableColumn="ano" style="text-align: center;"> Ano <p-sortIcon field="ano" />
+                    <th pSortableColumn="corporacao" style="text-align: center;"> Corporação <p-sortIcon field="corporacao" />
+                    <th pSortableColumn="estado" style="text-align: center; border-top-right-radius: 25px;"> Estado<p-sortIcon field="estado" />
+                </tr>
+
+                <tr>
+                    <th>
+                        <div class="d-flex justify-content-center">
+                            <p-columnFilter
+                                type="text"
+                                field="marca"
+                                placeholder="Procure por uma marca"
+                                ariaLabel="Filtro de marca"
+                                style="width: 100%; max-width: 200px;"
+                            ></p-columnFilter>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="d-flex justify-content-center">
+                                <p-columnFilter
+                                type="text"
+                                field="marca"
+                                placeholder="Procure por um modelo"
+                                ariaLabel="Filtro de modelo"
+                            ></p-columnFilter>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="d-flex justify-content-center">
+                            <p-columnFilter
+                                type="text"
+                                field="ano"
+                                placeholder="Procure por um ano"
+                                ariaLabel="Filtro de ano"
+                            ></p-columnFilter>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="d-flex justify-content-center">
+                            <p-columnFilter
+                                type="text"
+                                field="corporacao"
+                                placeholder="Procure por uma corporação"
+                                ariaLabel="Filtro de corporação"
+                            ></p-columnFilter>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="d-flex justify-content-center">
+                            <p-columnFilter
+                                type="text"
+                                field="estado"
+                                placeholder="Procure por um estado"
+                                ariaLabel="Filtro de estado"
+                            ></p-columnFilter>
+                        </div>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template #body let-viatura>
+                <tr>
+                    <td style="text-align: right;">{{ viatura.marca }}</td>
+                    <td style="text-align: center;">{{ viatura.modelo }}</td>
+                    <td>{{ viatura.ano }}</td>
+                    <td style="text-align: center;">{{ viatura.corporacao }}</td>
+                    <td style="text-align: center;">{{ viatura.estado }}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

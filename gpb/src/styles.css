@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Pricedown';
+  src: url("assets/fontes/pricedown\ bl.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aharoni';
+  src: url("assets/fontes/ahronbd.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita rolagem */
+
+  /* background-color: #0b081b */
+
+  background-image: url(/content/banner.png) !important;
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #0b081b;
+}

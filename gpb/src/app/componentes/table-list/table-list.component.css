@@ -1,0 +1,21 @@
+.card {
+    border: 0;
+    box-shadow: 0 0 10px black;
+}
+
+p-table {
+    justify-content: center;
+
+    font-size: 20px;
+
+    padding-top: 2rem !important;
+    
+}
+
+p-table th {
+    font-weight: bolder;
+}
+
+p-table td {
+    font-weight: normal;
+}
